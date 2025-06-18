@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQ56JZ1LM4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQ56JZ1LM4');
+</script>
+        <meta charset="utf-8" />
+        <title>Clothings with color phrase game</title>
+        <link rel="stylesheet" href="styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2893492306157134"
+     crossorigin="anonymous"></script>
+        
+    </head>
+
+    <body>
+        <a href="https://yournerdythaitutor.github.io/"> home</a>
+        <a href="https://yournerdythaitutor.github.io/Lessons/AllGames.html" style="float: right">other games</a>
+        <div id="score" class="score">Score: </div>
+        <div id="streak" class="streak">Streak: </div><a href="https://yournerdythaitutor.github.io/Lessons/Lesson16.html" style="float: right">Lesson</a>
+        <div id="question" class="question">
+            <!--button class="selectedOption">mid</!--button><button class = "options">single</button><button class="options">paired</button><br><br--->
+            <h2>Translate this phrase</h2>
+            <h3 id="part">part:</h3>
+        <img src="images/audio%20still.png">
+            <audio controls id="audio">
+                <source id="audioSource" src="./audios/Lesson21/เสื้อสีเงินตัวโน้น.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+            
+            
+        </div>
+        <h1 style="text-align: center;" id="yourPhrase"></h1>
+        <div class="helper">
+            <button id="helper" class="options" onclick="playAllTones()">click  here to hear all choices</button>
+            <audio id="helper_audio">
+                <source id="helper_audioSource" src="./audios/Lesson21/เสื้อกันหนาวสีดำตัวนั้น.mp3" type="audio/mp3">
+                Your browser does not support the audio tag.
+            </audio>
+        </div>
+        
+        <div id="answers" class="answers">
+        </div>
+        <script src="./PhrasesBreakDown.js"></script>
+        <script src="./TranslationMap/translate.js"></script>
+        <script>
+            var phrases= ["เสื้อกันหนาว#สี#ดำ#ตัว#นั้น","รองเท้าผ้าใบ#สี#ขาว#คู่#นั้น","กระเป๋า#สี#ฟ้า#ใบ#โน้น","กระเป๋า#สี#ทอง#ใบ#โน้น","เสื้อกันหนาว#สี#น้ำตาล#ตัว#นี้","รองเท้าผ้าใบ#สี#ขาว#คู่#นี้","หมวก#สี#ชมพู#ใบ#นั้น","กระเป๋า#สี#ชมพู#ใบ#โน้น","แว่นกันแดด#สี#ชมพู#อัน#โน้น","ผ้าพันคอ#สี#ทองแดง#ผืน#โน้น","ชุดนอน#สี#แดง#ชุด#นั้น","นาฬิกาข้อมือ#สี#เทา#เรือน#นี้","รองเท้าแตะ#สี#น้ำเงิน#คู่#นั้น","กางเกงใน#สี#ทองแดง#ตัว#โน้น","แว่น#สี#ใส#อัน#โน้น","ผ้ากันเปื้อน#สี#เงิน#ผืน#นี้","นาฬิกาข้อมือ#สี#เขียว#เรือน#นี้","รองเท้าส้นสูง#สี#ส้ม#คู่#นี้","เสื้อกันหนาว#สี#ส้ม#ตัว#โน้น","กระเป๋า#สี#น้ำเงิน#ใบ#โน้น","รองเท้าแตะ#สี#เขียว#คู่#นี้","รองเท้า#สี#น้ำเงิน#คู่#นี้","เสื้อชั้นใน#สี#เทา#ตัว#นั้น","นาฬิกาข้อมือ#สี#ใส#เรือน#โน้น","กางเกง#สี#เหลือง#ตัว#นี้","ชุดนอน#สี#ม่วง#ชุด#นั้น","เสื้อกันหนาว#สี#เหลือง#ตัว#โน้น","เสื้อ#สี#ส้ม#ตัว#นี้","กระโปรง#สี#เทา#ตัว#นั้น","เสื้อชั้นใน#สี#ม่วง#ตัว#นี้","รองเท้าส้นสูง#สี#ฟ้า#คู่#โน้น","ผ้ากันเปื้อน#สี#น้ำตาล#ผืน#นั้น","เสื้อ#สี#เงิน#ตัว#นั้น","กระเป๋า#สี#ม่วง#ใบ#นี้","กระเป๋า#สี#ส้ม#ใบ#นี้","รองเท้าผ้าใบ#สี#เหลือง#คู่#โน้น","แว่นกันแดด#สี#แดง#อัน#นั้น","กระโปรง#สี#ขาว#ตัว#โน้น","นาฬิกาข้อมือ#สี#ฟ้า#เรือน#โน้น","นาฬิกาข้อมือ#สี#ดำ#เรือน#นี้","แว่นกันแดด#สี#เขียว#อัน#นั้น","กระเป๋า#สี#ฟ้า#ใบ#นั้น","แว่น#สี#เงิน#อัน#โน้น","เสื้อชั้นใน#สี#น้ำเงิน#ตัว#นี้","รองเท้า#สี#ฟ้า#คู่#โน้น","เสื้อ#สี#เงิน#ตัว#โน้น","ผ้ากันเปื้อน#สี#แดง#ผืน#นี้","แว่น#สี#ส้ม#อัน#นั้น","รองเท้าแตะ#สี#เทา#คู่#นั้น","แว่นกันแดด#สี#เหลือง#อัน#นั้น","กางเกงใน#สี#ชมพู#ตัว#โน้น","เสื้อ#สี#เทา#ตัว#โน้น","กางเกง#สี#ชมพู#ตัว#โน้น","รองเท้าผ้าใบ#สี#เทา#คู่#นั้น","รองเท้า#สี#ขาว#คู่#นี้","รองเท้า#สี#ส้ม#คู่#นี้","เสื้อ#สี#เทา#ตัว#นี้","ผ้ากันเปื้อน#สี#ส้ม#ผืน#โน้น"]
+            
+            var structure = {
+                0: {
+                    order:[2,null,1,null,0],
+                    categories:["clothings","colors","colors","classifiers","demonstratives"]     
+                }
+                
+            }
+            var definitions = getDefinitions();
+            setupGame("./audios/Lesson21/",phrases,structure, definitions, 6); 
+        </script>
+           
+        
+    </body>
+</html>
